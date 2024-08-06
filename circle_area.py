@@ -1,15 +1,11 @@
-# ******************
-# ÁREA DE UN CÍRCULO
-# ******************
+import math
 
-
-def run(radius: float) -> float:
-    # TU CÓDIGO AQUÍ
-    PI=3.14
-    area= PI*radius*2
-
+def calcular_area_circulo(radio):
+    """Calcula el área de un círculo dado su radio."""
+    area = math.pi * (radio ** 2)
     return area
 
-
-if __name__ == '__main__':
-    run(4)
+# Ejemplo de uso
+radio = float(input("Ingresa el radio del círculo: "))
+area = calcular_area_circulo(radio)
+print(f"El área del círculo con radio {radio} es: {area}")
