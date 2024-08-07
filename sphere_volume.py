@@ -1,16 +1,11 @@
-# *********************
-# VOLUMEN DE UNA ESFERA
-# *********************
+import math
 
+def calcular_volumen_esfera(radio):
+    """Calcula el volumen de una esfera dado su radio."""
+    volumen = (4/3) * math.pi * (radio ** 3)
+    return volumen
 
-def run(radius: float) -> float:
-    # TU CÓDIGO AQUÍ
-    PI = 3.14
-    volume = 4/3 * radius**3
-
-
-    return volume
-
-
-if __name__ == '__main__':
-    run(5)
+# Ejemplo de uso
+radio = float(input("Ingresa el radio de la esfera: "))
+volumen = calcular_volumen_esfera(radio)
+print(f"El volumen de la esfera con radio {radio} es: {volumen}")
